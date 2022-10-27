@@ -6,21 +6,24 @@ public class Circle {
 	private double circumference;
 	private double area;
 	
+	
 	//Methods
 	public Circle() {
 		
 	}
 	
 	public Circle(double r) {
-		
+		this.radius = radius;
 	}
 	
 	private double findCircumference() {
-		return 0;
+			this.radius * 2 *Math.PI;	
+		return circumference;
 	}
 	
 	private double findArea() {
-		return 0;
+		
+			return area;
 	}
 	
 	public void printStats() {
