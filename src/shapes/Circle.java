@@ -9,25 +9,33 @@ public class Circle {
 	
 	//Methods
 	public Circle() {
-		
+	this.radius = 1;	
 	}
 	
 	public Circle(double r) {
-		this.radius = radius;
+		this.radius = r;
+		this.circumference =2;
+		
+		this.circumference = findCircumference();
+		this.area = findArea ();
 	}
 	
 	private double findCircumference() {
-			this.radius * 2 *Math.PI;	
-		return circumference;
+			
+		return 2*this.radius*Math.PI;	
 	}
 	
 	private double findArea() {
 		
-			return area;
+			return Math.PI*(Math.pow(radius, 2));
+			
 	}
 	
 	public void printStats() {
-		
+		System.out.println("Circle");
+		System.out.println("radius = "+ this.radius);
+		System.out.println("Circumference = "+this.circumference);
+		System.out.println("Area ="+this.area);
 	}
 
 	public double getRadius() {

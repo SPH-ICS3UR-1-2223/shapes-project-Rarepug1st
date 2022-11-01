@@ -9,23 +9,34 @@ public class Triangle {
 	
 	//Methods
 	public Triangle() {
-		
+		this.sideA = 1;
+		this.sideB= 1;
+		this.sideC =1;
 	}
 	
 	public Triangle(double a, double b, double c) {
+		this.sideA = a;
+		this.sideB =b;
+		this.sideC =c;
+		
 		
 	}
 	
 	private double findPerimeter() {
-		return 0;
+		return this.sideA+this.sideB+this.sideC;
 	}
 	
 	private double findArea() {
-		return 0;
+		return (this.sideA*this.sideB)/2;
 	}
 	
 	public void printStats() {
-		
+		System.out.println("Circle ");
+		System.out.println("Hight = "+ this.sideA);
+		System.out.println("base = "+ this.sideB);
+		System.out.println("Side C ="+ this.sideC);
+		System.out.println("perimeter =" + this.perimeter);
+		System.out.println("area = "+ this.area);
 	}
 
 	public double getSideA() {
